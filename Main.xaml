@@ -119,7 +119,7 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="856.6666666666666,1195.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="856.6666666666666,1372" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="PdfTextOutput" />
     </Sequence.Variables>
@@ -128,7 +128,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="d7846953-8caa-4d56-a3c8-76ee1d52929e" DisplayName="CV Screen Scope" sap:VirtualizedContainerService.HintSize="434,1172.6666666666667" sap2010:WorkflowViewState.IdRef="CVScope_6" SendOnPremData="False" Version="V6">
+    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="d7846953-8caa-4d56-a3c8-76ee1d52929e" DisplayName="CV Screen Scope" sap:VirtualizedContainerService.HintSize="434,1349.3333333333333" sap2010:WorkflowViewState.IdRef="CVScope_6" SendOnPremData="False" Version="V6">
       <p:CVScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -147,7 +147,8 @@
             <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="PDFOutput.txt" sap:VirtualizedContainerService.HintSize="400,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteTextFile_3" Text="[PdfTextOutput]" />
             <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="400,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[PdfTextOutput]" />
             <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="400,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[PdfTextOutput]" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="400,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[PdfTextOutput]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="400,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[PdfTextOutput]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="400,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[PdfTextOutput]" />
           </Sequence>
         </ActivityAction>
       </p:CVScope.Body>
