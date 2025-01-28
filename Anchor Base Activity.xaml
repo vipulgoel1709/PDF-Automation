@@ -94,13 +94,13 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Anchor_Base_Activity" sap:VirtualizedContainerService.HintSize="856.6666666666666,447.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Anchor_Base_Activity" sap:VirtualizedContainerService.HintSize="856.6666666666666,566" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="760,424.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="760,543.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="Output" />
       </Sequence.Variables>
@@ -135,7 +135,7 @@
         <ui:AnchorBase.AnchorProvider>
           <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'grouping'" sap:VirtualizedContainerService.HintSize="334,107.33333333333333" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
             <ui:WaitUiElementAppear.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1c439de6-bd07-46b5-ab55-3e3977ccd4ad" InformativeScreenshot="c9924f66174f0ae775195b909ac70a4e" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Sample Invoice A.pdf and 10 more pages - Work - Microsoft​ Edge' /&gt;&lt;ctrl name='Sample Invoice A.pdf' role='document' /&gt;&lt;ctrl name='PDF document containing 1 page' role='document' /&gt;&lt;ctrl name='Page 1' role='pane' /&gt;&lt;ctrl idx='8' role='grouping' /&gt;">
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1c439de6-bd07-46b5-ab55-3e3977ccd4ad" InformativeScreenshot="f3fcff9f13003aab2fc9a8340345b952" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Sample Invoice A.pdf and 12 more pages - Work - Microsoft​ Edge' /&gt;&lt;ctrl idx='5' role='client' /&gt;">
                 <ui:Target.TimeoutMS>
                   <InArgument x:TypeArguments="x:Int32" />
                 </ui:Target.TimeoutMS>
@@ -147,7 +147,8 @@
           </ui:WaitUiElementAppear>
         </ui:AnchorBase.AnchorProvider>
       </ui:AnchorBase>
-      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="726,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Output]" />
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="726,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Output]" />
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="726,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[Output]" />
     </Sequence>
   </Sequence>
 </Activity>
