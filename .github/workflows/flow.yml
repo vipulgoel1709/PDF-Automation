@@ -7,7 +7,7 @@ on:
 
 jobs:
   test-build:
-    runs-on: windows
+    runs-on: windows-latest
 
     steps:
       - uses: Mikael-RnD/setup-uipath@v2
