@@ -13,3 +13,6 @@ jobs:
       - uses: Mikael-RnD/setup-uipath@v2
         with:
           version: 24.12.9111.31003
+
+      - name : Get the version
+        run : uipcli --version
