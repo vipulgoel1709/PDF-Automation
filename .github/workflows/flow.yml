@@ -14,5 +14,9 @@ jobs:
         with:
           version: 24.12.9111.31003
 
-      - name : Get the version
+      - name : Get the uipath cli version
         run : uipcli --version
+        
+      - name : Get the dotnet version
+        run : dotnet --version
+        
