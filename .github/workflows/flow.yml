@@ -19,4 +19,7 @@ jobs:
         
       - name : Get the dotnet version
         run : dotnet --version
+
+      - name: Build the package
+        run : uipcli package pack "./project.json" -o "./root" --autoVersion  --libraryOrchestratorApplicationId ${{secrets.ORCHESTRATOR_APPLICATION_ID}} --libraryOrchestratorApplicationSecret ${{secrets.ORCHESTRATOR_APPLICATION_SECRET}} --repositoryUrl ${{github.repositoryUrl}} --repositoryCommit ${{github.sha}} ----repositoryBranch "main"
         
