@@ -14,12 +14,17 @@ jobs:
         with:
           version: 24.12.9111.31003
 
-      - name : Get the uipath cli version
-        run : uipcli --version
+      #- name : Get the uipath cli version
+       # run : uipcli --version
         
-      - name : Get the dotnet version
-        run : dotnet --version
+     # - name : Get the dotnet version
+      #  run : dotnet --version
+
+      - name : Checkout the package
+        uses : actions/checkout@v4
+        with :
+          path : test
 
       - name: Build the package
-        run : uipcli package pack -o "./root" --autoVersion  --libraryOrchestratorApplicationId ${{secrets.ORCHESTRATOR_APPLICATION_ID}} --libraryOrchestratorApplicationSecret ${{secrets.ORCHESTRATOR_APPLICATION_SECRET}} --repositoryUrl ${{github.repositoryUrl}} --repositoryCommit ${{github.sha}} --repositoryBranch ${{github.ref}}
+        run : uipcli package pack "test/package.json" -o "./root" --autoVersion  --libraryOrchestratorApplicationId ${{secrets.ORCHESTRATOR_APPLICATION_ID}} --libraryOrchestratorApplicationSecret ${{secrets.ORCHESTRATOR_APPLICATION_SECRET}} --repositoryUrl ${{github.repositoryUrl}} --repositoryCommit ${{github.sha}} --repositoryBranch ${{github.ref}}
         
